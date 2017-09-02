@@ -1,0 +1,18 @@
+<app-header></app-header>
+<h2>Recargar</h2>
+<form class="form-horizontal">
+	<div class="form-group">
+		<label class="col-sm-2 control-label">Recarga: </label>
+		<div class="col-sm-10">
+			<select [(ngModel)]="recarga" name="recarga" class="form-control">
+				<option [value]="50">50</option>
+				<option [value]="100">100</option>
+				<option [value]="200">200</option>
+				<option [value]="300">300</option>
+				<option [value]="500">500</option>
+			</select>
+		</div>
+	</div>
+	<button (click)="recargar()" type="button" class="btn btn-success">Recargar</button>
+</form>
+<app-footer></app-footer>

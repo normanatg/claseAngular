@@ -1,0 +1,28 @@
+<div class="forRegistro">
+	<h2>Login</h2>
+	<form class="form-horizontal">
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Telefono</label>
+			<div class="col-sm-10">
+				<input [(ngModel)]="tel" type="text" name="tel" class="form-control">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2 control-label">pin</label>
+			<div class="col-sm-10">
+				<input [(ngModel)]="pin" type="text" name="pin" class="form-control">
+			</div>
+		</div>
+		<button (click)="login()" type="button" class="btn btn-success">Entrar</button>
+	</form>
+	<h2>Recuperar NIP</h2>
+	<form class="form-horizontal">
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Telefono</label>
+			<div class="col-sm-10">
+				<input [(ngModel)]="tel" type="text" name="tel" class="form-control">
+			</div>
+		</div><br>
+		<button (click)="recuperar()" type="button" class="btn btn-success">Recuperar</button>
+	</form>
+</div>
